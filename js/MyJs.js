@@ -1,0 +1,11 @@
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+      $("#myCarousel").carousel("next");
+  });
+  $("#myBtn").click(function(){
+   $("#myCarousel").carousel("prev");
+});
+$("#showmore").click(function(){
+  console.log("hello");
+}); 
+});

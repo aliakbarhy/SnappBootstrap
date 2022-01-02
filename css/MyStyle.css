@@ -1,0 +1,535 @@
+/*----------------
+      Fonts 
+----------------*/
+@font-face {
+    font-family: 'iranianSansREGULAR';
+    src: url('assets/Font/IranianSans.woff2') format('woff2'),
+     url('assets/Font/IranianSans.woff') format('woff'),
+     url('assets/Font/IranianSans.ttf') format('ttf');
+     font-weight: normal;
+     font-style: normal;
+    }
+    @font-face {
+    font-family: 'iranianSansBOLD';
+    src: url('assets/Font/IranianSans.woff2') format('woff2'),
+     url('assets/Font/IranianSans.woff') format('woff'),
+     url('assets/Font/IranianSans.ttf') format('ttf');
+     font-weight: 900;
+     font-style: normal;
+    }
+/*----------------
+DefinCustomCss Var 
+----------------*/
+    :root{
+        --primary:hsl(144, 67%, 40%);
+        --lightprimary:rgb(0, 219, 117);
+        --secondary:#f2f5f8;
+        --gray:#404040;
+        --lightgray:#979797;
+        --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+        --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+        --inner-shadow: inset 3px 3px 3px #d0d0d0, inset  -3px -3px 3px #f8f8f8;
+        --inner-shadow-0: inset 0 0 0 #d0d0d0, inset  0 0 0 #f8f8f8;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+    a{
+        text-decoration: none;
+    }
+/*----------------
+    Nav Header
+----------------*/
+    .navbar ul li{
+        font-size:17px;
+        font-family: iranianSansREGULAR;
+    }
+    .navbar-toggler{
+        border: 0;
+    }
+    nav .container
+    {
+        width: 1140px; 
+    }
+    .navbar-expand-lg .navbar-nav{
+        padding-right: 15px;
+    }
+/*----------------
+    First Section 
+----------------*/
+    #firstSec{
+        height:550px;
+        background: var(--primary);
+    }
+
+    #firstSec .container{
+        max-width:100%;
+    }
+
+    .col-r-firstSec{
+        padding-right: max(100px,31%);
+        padding-top: 32px;
+        padding-left: 20px;
+    }
+    .col-r-firstSec h1{
+        font-size: 3vw;
+        line-height: 60px;
+        font-weight: 700;
+        color: white;
+    }
+    .col-r-firstSec p{
+        color: white;
+        font-size:1.4vw;
+        font-family: iranianSansREGULAR;
+        line-height: 1.5;
+        font-weight: 100;
+        padding-top: 10px;
+        opacity: 0.8;
+    }
+    .col-r-firstSec .inputNumber{
+        color: rgba(255, 255, 255, 0.74);
+        background-color: transparent;
+        box-shadow: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.74);
+        border-right: none;border-left: none;border-top: none;
+        padding-right: 10px;
+        font-size: 14px;
+        width: 53%;
+    }
+    .inputNumber::placeholder{color: rgba(255, 255, 255, 0.44);}
+    .inputNumber::-webkit-inner-spin-button{display: none;}
+    .inputNumber:focus{outline: none;}
+    #firstSec .first-row .col-md-6:nth-child(2) {
+        background-image: url("../assets/images/intro_desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+    }
+    .col-r-firstSec .formSendTell .btn{
+        background-color: white;
+        color: var(--primary);
+        border-radius:6px;
+    }
+    .col-r-firstSec #gotowebsnap{
+        background-color: transparent;
+        color: white;
+        border:1px solid white;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .col-r-firstSec #downloadapp{display: none;}
+    .col-r-firstSec #gotowebsnap:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+/*----------------
+    Second Section 
+----------------*/
+     #secondSec{
+        height:240px;
+        background: hsl(0, 0%, 100%);
+        max-width:100%;
+    }
+    #secondSec .container{
+        display: flex;
+        justify-content: center;
+        horizontal-align:middle;
+    }
+/*----------------
+    Third Section 
+----------------*/
+   #thirdSec{
+    height:auto;
+    background: var(--secondary);
+     max-width:100%;
+     padding-bottom: 30px;
+  }
+  #thirdSec .container h1{
+     text-align: center;
+     font-family: iranianSansBOLD;
+     font-weight: 900;
+     font-size: 2.5vw;
+     color: var(--gray);
+  }
+  #thirdSec .container .cards{
+     display: inline-flex;
+     height:116px;
+     width: 285px;
+     background-color: white;
+     margin: 18px;
+     border-radius: 18px;
+     padding: 0 10px 0 0;
+     color: var(--gray);
+     text-decoration: none;
+
+  }
+  #thirdSec .container .cards:hover{
+     box-shadow: var(--outer-shadow);
+     transition: all 0.3s ease;
+    }
+  #thirdSec .container .cards img{
+     box-shadow: var(--outer-shadow);
+     border-radius: 18px;
+  }
+  #thirdSec .container .cards h5{
+     color: var(--gray);
+  }
+  #thirdSec .container .cards p{
+     color: var(--lightgray);
+  }
+  /*----------------
+    Fourth Section 
+----------------*/
+#fourthSec{
+    width: 75%;
+    margin: 100px auto 0 auto;
+ }
+ #fourthSec #showmore{display: none;}
+ .carousel-inner{
+    border-radius:20px;
+ }
+ .carousel-indicators{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: hsla(0,0%,100%,.18);
+    border-radius:10px;
+    width: fit-content;
+ }
+ .carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: var(--primary);
+ }
+/*----------------
+    Fifth Section 
+----------------*/
+#fifthSec{
+    height:auto;
+    margin-top: 5%;
+    background: white;
+    padding-bottom: 50px;
+}
+
+#fifthSec .container{
+    max-width:100%;
+}
+
+#fifthSec .col-r-fifthSec{
+    padding: 32px 23px 60px max(100px,31%);
+}
+#fifthSec .col-r-fifthSec h1{
+    font-size: 3vw;
+    line-height: 60px;
+    font-weight: 700;
+    color: var(--gray);
+}
+#fifthSec .col-r-fifthSec p{
+    color: var(--gray);
+    opacity: 0.7;
+    font-size:1.2vw;
+    font-family: iranianSansREGULAR;
+    line-height: 1.4;
+    font-weight: 100;
+    padding-top: 10px;
+}
+#fifthSec .first-row .col-md-6:nth-child(1) {
+    background-image: url("../assets/images/asghar-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+#fifthSec .second-row{margin-top: -4%;display: flex;justify-content: center;}
+#fifthSec .second-row .col-3{width: 19%;}
+#fifthSec .second-row .col-3 .items .backimg{
+   background-color: #f2f5f8;
+   border-radius: 30px;
+}
+#fifthSec .second-row .col-3 .items .backimg img{
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+}
+#fifthSec .second-row .col-3 .items h5{
+   font-family: iranianSansBOLD;
+   font-weight: 900;
+   color: var(--gray);
+   padding-top: 20px;
+}
+#fifthSec .second-row .col-3 .items p{
+   color: var(--lightgray);
+   padding-top: 10px;
+   font-size: 14px;
+}
+/*----------------
+    Sixth Section 
+----------------*/
+#sixthSec{
+    height:auto;
+     background: var(--secondary);
+      max-width:100%;
+      padding-bottom: 30px;
+ }
+ #sixthSec h2{
+    text-align: center;
+      font-family: iranianSansBOLD;
+      font-weight: 900;
+      color: var(--gray);
+ }
+ #sixthSec .p{
+    color: var(--gray);
+     opacity: 0.7;
+     font-size:1.4vw;
+     font-family: iranianSansREGULAR;
+     text-align: center;
+     font-weight: 100;
+     padding-top: 10px;
+ }
+ #sixthSec  #regesterDrivers{
+    display: block;
+    background-color: var(--lightprimary);
+    width: 170px;
+    height: 48px;
+    font-size: 18px;
+    min-height: 48px;
+    border-radius: 10px;
+    color: white;
+    margin: 0 auto 0 auto;
+     }
+     #sixthSec #regesterDrivers:hover{
+         opacity: 0.9;
+     }
+     #sixthSec video{
+       width: 80%;
+       margin: 4% auto 6% auto !important; 
+       display: block;
+       border-radius: 10px;
+     }
+     #sixthSec .container .cards{
+      display: flex;
+      height:auto;
+      flex: 0 0 39%;
+      background-color: white;
+      margin: 7px;
+      border-radius: 18px;
+      padding: 30px;
+      color: var(--gray);
+      text-decoration: none;
+ 
+   }
+   #sixthSec .container .cards:hover{
+      box-shadow: var(--outer-shadow);
+      transition: all 0.3s ease;
+     }
+   #sixthSec .container .cards img{
+      box-shadow: var(--outer-shadow);
+      border-radius: 18px;
+      width:30%;
+      height: auto;
+   }
+   #sixthSec .container .cards h5{
+      color: var(--gray);
+   }
+   #sixthSec .container .cards p{
+      color: var(--lightgray);
+   }
+ /*----------------
+    Footer
+----------------*/
+footer .col-4{
+    background-color: white;
+ }
+ footer .col-8{
+    background-color: white;
+    }
+       footer .col-8 nav a{color: var(--lightgray);}
+       footer .col-4{
+          display: flex;
+          justify-content: center;
+       }
+       footer .container{max-width: 1200px;}
+
+ /*----------------
+    Responsive
+----------------*/
+@media only screen and (max-width: 1223px) and (min-width: 1024px) {
+    #fifthSec .second-row .col-3{width: 25% !important;}
+}
+@media only screen and (max-width: 1023px) {
+        #firstSec{
+        height:550px;
+        background: hsl(144, 67%, 40%) !important;
+    }
+    .col-r-firstSec{
+        padding: 32px max(100px,21%) 0 42px;
+    }
+    .col-r-firstSec h1{
+        font-size: 3.6vw;
+        padding-bottom: 15px;
+        line-height:50px;
+    }
+    .col-r-firstSec p{
+        font-size: 2vw;
+        padding-top: 3px !important;
+    }
+    #secondSec .container .px-3{
+        padding-right: 0.3rem !important;
+        padding-left: 0.3rem !important;
+    }
+    #fourthSec{width: 85% !important;}
+    #fifthSec .first-row .col-md-6:nth-child(1){height: 460px;}
+    #fifthSec .col-md-6{width: 100%;}
+    #fifthSec .col-r-fifthSec{
+        width: 85%;
+        margin: 25px auto 0 auto;
+        padding: 0 !important;
+    }
+    #fifthSec .col-r-fifthSec h1{font-size: 5vw;}
+    #fifthSec .col-r-fifthSec p{font-size:1.8vw;line-height: 1.7;}
+    #fifthSec .second-row{margin-top: 30% !important;}
+    #fifthSec .second-row .col-3{width: 25% !important;margin:0 !important;}
+    #fifthSec .second-row{margin-top:5% !important;}
+    #sixthSec .p{font-size:1.8vw !important;}
+
+    #sixthSec .container .d-flex{display:block !important;}
+    #sixthSec .container .cards{
+        display: block !important;
+        margin-bottom: 3%;
+    }
+    #sixthSec .container .cards img{
+        width: 16%;
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    footer .col-8{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+    footer .col-4{
+        width: 100%;
+        padding-top: 25px;
+    }
+}
+@media only screen and (max-width: 877px) and (min-width: 767px) {
+    .col-r-firstSec{
+        padding-right: 45px;
+    }
+    .col-r-firstSec h1{
+        line-height:50px;
+    }
+    .container, .container-md, .container-sm {max-width: 98%;}
+    #secondSec .container{
+        display:block !important;
+        padding-top: 70px;
+    }
+    #fourthSec{width: 88% !important;}
+    #fifthSec .col-r-fifthSec{
+    padding-left: 0;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #fifthSec .col-r-fifthSec h1{font-size: 5vw;}
+    #fifthSec .col-r-fifthSec p{font-size: 2vw;margin-top: 20px;}
+    #fifthSec .second-row{margin-top: 40% !important;}
+    #fifthSec .second-row .col-3{width: 40% !important;}
+    #fifthSec .second-row{margin-top:7% !important;}
+}
+    @media only screen and (max-width: 761px) {
+        #firstSec{
+        height:auto;
+        padding-bottom: 25px;
+    }
+    .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+    }
+    #firstSec .first-row .col-md-6:nth-child(2) {
+        order: 1;
+        height: 360px;
+    }
+    #firstSec .first-row .col-md-6:nth-child(1) {
+        order: 2;
+    }
+    .col-r-firstSec{
+        padding-right: 15px;
+        padding-top: 32px;
+        padding-left: 0;
+    }
+    .col-r-firstSec h1 {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+    .col-r-firstSec p{
+        font-size: 3vw;
+    }
+    .col-r-firstSec #gotowebsnap{
+        display: none;
+    }
+    .col-r-firstSec #downloadapp{
+        display: block;
+        background-color: white;
+        width: 95%;
+        height: 48px;
+        font-size: 18px;
+        min-height: 48px;
+        line-height: 1;
+    }
+    .col-r-firstSec .formSendTell{
+        display: none;
+    }
+    #secondSec{
+        display: none;
+    }
+    #thirdSec .container h1{font-size:4vw !important;}
+    #thirdSec .container .cards .align-self-stretch{
+        padding: 0 0 0 0 !important;
+    }
+    #thirdSec .container .cards{
+        display: block !important;
+        padding: 0 !important;
+        text-align: center;
+        height: auto;
+    }
+    #thirdSec .container .cards img{
+       margin-left: auto;
+       margin-right: auto;
+       display: table;
+       margin-top: 12px !important;
+    }
+    #thirdSec .container .cards h5{
+        padding-top: 6px !important;
+        font-size: 15px !important;
+    }
+    #thirdSec .container .cards p{display: none;}
+    #fourthSec{
+        width: 95% !important;
+        margin-top: -170px;
+        position: relative;
+        -webkit-box-shadow: 0px -28px 28px 10px var(--lightprimary);
+        box-shadow: 0px -28px 28px 10px var(--lightprimary);
+        border-radius:20px;
+        background-color: var(--lightprimary);
+    }
+    .displayBlock{display: block;}
+    #fourthSec #showmore{
+        display:block;
+        background-color: transparent;
+        color: white;
+        border:1px solid white;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #fifthSec .first-row .col-md-6:nth-child(1){height: 460px;}
+    #fifthSec .col-r-fifthSec{width: 95% !important;}
+    #fifthSec .col-r-fifthSec h1{font-size: 8vw;}
+    #fifthSec .col-r-fifthSec p{font-size:3vw;line-height: 1.5;}
+    #fifthSec .second-row{margin-top: 360px !important;}
+    #fifthSec .second-row .col-3{width: 90% !important;}
+    #fifthSec .second-row{margin-top:5% !important;}
+    #sixthSec .h2{font-size: 6vw !important;}
+    #sixthSec .p{font-size: 3vw !important;}
+    #sixthSec .container{max-width: 960px !important;}
+    }
