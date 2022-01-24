@@ -50,10 +50,7 @@ DefinCustomCss Var
     .navbar-toggler{
         border: 0;
     }
-    nav .container
-    {
-        width: 1140px; 
-    }
+ 
     .navbar-expand-lg .navbar-nav{
         padding-right: 15px;
     }
@@ -61,7 +58,7 @@ DefinCustomCss Var
     First Section 
 ----------------*/
     #firstSec{
-        height:550px;
+        height:440px;
         background: var(--primary);
     }
 
@@ -70,21 +67,21 @@ DefinCustomCss Var
     }
 
     .col-r-firstSec{
-        padding-right: max(100px,31%);
+        padding-right: max(100px,30%);
         padding-top: 32px;
         padding-left: 20px;
     }
     .col-r-firstSec h1{
-        font-size: 3vw;
-        line-height: 60px;
+        font-size: 39px;
+        line-height: 50px;
         font-weight: 700;
         color: white;
     }
     .col-r-firstSec p{
         color: white;
-        font-size:1.4vw;
+        font-size:23px;
         font-family: iranianSansREGULAR;
-        line-height: 1.5;
+        line-height: 30px;
         font-weight: 100;
         padding-top: 10px;
         opacity: 0.8;
