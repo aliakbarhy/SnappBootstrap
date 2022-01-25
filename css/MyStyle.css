@@ -2,21 +2,13 @@
       Fonts 
 ----------------*/
 @font-face {
-    font-family: 'iranianSansREGULAR';
-    src: url('assets/Font/IranianSans.woff2') format('woff2'),
-     url('assets/Font/IranianSans.woff') format('woff'),
-     url('assets/Font/IranianSans.ttf') format('ttf');
-     font-weight: normal;
-     font-style: normal;
+    font-family: CFtehran;
+    src: url(../assets/Font/tehran.ttf);
     }
     @font-face {
-    font-family: 'iranianSansBOLD';
-    src: url('assets/Font/IranianSans.woff2') format('woff2'),
-     url('assets/Font/IranianSans.woff') format('woff'),
-     url('assets/Font/IranianSans.ttf') format('ttf');
-     font-weight: 900;
-     font-style: normal;
-    }
+        font-family: CFlalezar;
+        src: url(../assets/Font/Lalezar.ttf);
+        }
 /*----------------
 DefinCustomCss Var 
 ----------------*/
@@ -44,8 +36,8 @@ DefinCustomCss Var
     Nav Header
 ----------------*/
     .navbar ul li{
-        font-size:17px;
-        font-family: iranianSansREGULAR;
+        font-size:23px;
+        font-family: CFtehran;
     }
     .navbar-toggler{
         border: 0;
@@ -72,15 +64,16 @@ DefinCustomCss Var
         padding-left: 20px;
     }
     .col-r-firstSec h1{
-        font-size: 39px;
+        font-size: 2.3vw;
         line-height: 50px;
         font-weight: 700;
         color: white;
+        font-family: CFlalezar;
     }
     .col-r-firstSec p{
         color: white;
-        font-size:23px;
-        font-family: iranianSansREGULAR;
+        font-size:1.8vw;
+        font-family: CFtehran;
         line-height: 30px;
         font-weight: 100;
         padding-top: 10px;
@@ -145,7 +138,7 @@ DefinCustomCss Var
   }
   #thirdSec .container h1{
      text-align: center;
-     font-family: iranianSansBOLD;
+     font-family: CFlalezar;
      font-weight: 900;
      font-size: 2.5vw;
      color: var(--gray);
@@ -153,7 +146,7 @@ DefinCustomCss Var
   #thirdSec .container .cards{
      display: inline-flex;
      height:95px;
-     width: 330px;
+     width: 345px;
      background-color: white;
      margin: 18px;
      border-radius: 18px;
@@ -172,9 +165,12 @@ DefinCustomCss Var
   }
   #thirdSec .container .cards h5{
      color: var(--gray);
+     font-family: CFlalezar;
   }
   #thirdSec .container .cards p{
      color: var(--lightgray);
+     font-family: CFtehran;
+     font-size: 21px;
   }
   /*----------------
     Fourth Section 
@@ -215,16 +211,17 @@ DefinCustomCss Var
     padding: 32px 23px 60px max(100px,31%);
 }
 #fifthSec .col-r-fifthSec h1{
-    font-size: 3vw;
+    font-size: 40px;
     line-height: 60px;
     font-weight: 700;
     color: var(--gray);
+    font-family: CFlalezar;
 }
 #fifthSec .col-r-fifthSec p{
     color: var(--gray);
     opacity: 0.7;
-    font-size:1.2vw;
-    font-family: iranianSansREGULAR;
+    font-size: 22px;
+    font-family: CFtehran;
     line-height: 1.4;
     font-weight: 100;
     padding-top: 10px;
@@ -234,6 +231,7 @@ DefinCustomCss Var
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
+    height: 450px;
 }
 #fifthSec .second-row{margin-top: -4%;display: flex;justify-content: center;}
 #fifthSec .second-row .col-3{width: 19%;}
@@ -247,15 +245,17 @@ DefinCustomCss Var
    margin-right: auto;
 }
 #fifthSec .second-row .col-3 .items h5{
-   font-family: iranianSansBOLD;
+   font-family: CustomFont;
    font-weight: 900;
    color: var(--gray);
    padding-top: 20px;
+   font-family: CFlalezar;
 }
 #fifthSec .second-row .col-3 .items p{
    color: var(--lightgray);
    padding-top: 10px;
-   font-size: 14px;
+   font-size: 19px;
+   font-family: CFtehran;
 }
 /*----------------
     Sixth Section 
@@ -268,15 +268,15 @@ DefinCustomCss Var
  }
  #sixthSec h2{
     text-align: center;
-      font-family: iranianSansBOLD;
+      font-family: CFlalezar;
       font-weight: 900;
       color: var(--gray);
  }
  #sixthSec .p{
     color: var(--gray);
      opacity: 0.7;
-     font-size:1.4vw;
-     font-family: iranianSansREGULAR;
+     font-size: 25px;
+     font-family: CFtehran;
      text-align: center;
      font-weight: 100;
      padding-top: 10px;
@@ -325,19 +325,20 @@ DefinCustomCss Var
    }
    #sixthSec .container .cards h5{
       color: var(--gray);
+      font-family: CFlalezar;
    }
    #sixthSec .container .cards p{
       color: var(--lightgray);
+      font-family: CFtehran;
+      font-size : 19px;
    }
  /*----------------
     Footer
 ----------------*/
-footer .col-4{
-    background-color: white;
- }
- footer .col-8{
-    background-color: white;
-    }
+footer nav a{
+font-family: CFlalezar;
+}
+
        footer .col-8 nav a{color: var(--lightgray);}
        footer .col-4{
           display: flex;
@@ -415,8 +416,12 @@ footer .col-4{
         line-height:50px;
     }
     .container, .container-md, .container-sm {max-width: 98%;}
+    #secondSec{
+        height:auto !important;
+        padding-bottom: 55px;
+    }
     #secondSec .container{
-        display:block !important;
+        display:grid !important;
         padding-top: 70px;
     }
     #fourthSec{width: 88% !important;}
@@ -508,6 +513,7 @@ footer .col-4{
         border-radius:20px;
         background-color: var(--lightprimary);
     }
+    #fourthSec #myCarousel img{height:270px !important;}
     .displayBlock{display: block;}
     #fourthSec #showmore{
         display:block;
